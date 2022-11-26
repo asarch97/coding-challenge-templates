@@ -9,3 +9,8 @@ docker-compose up -d
 If changes have been made, make sure we rebuild the image.
 
 docker-compose up -d --build
+
+
+To stop the service:
+
+docker-compose down
