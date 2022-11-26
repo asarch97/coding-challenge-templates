@@ -3,7 +3,9 @@ This template provides a very basic Spring Boot application. This is intended to
 
 # Running with docker-compose
 If no changes have been made, can bring up the service using:
+
 docker-compose up -d
 
 If changes have been made, make sure we rebuild the image.
+
 docker-compose up -d --build
