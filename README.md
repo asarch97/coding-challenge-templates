@@ -4,9 +4,3 @@ For simplicity, one VPC was used without any subnetting. Both services are publi
 
 The final url to see it in action: http://reactlb-2088109173.us-east-1.elb.amazonaws.com
 
-See the detailed_instructions for the complete set of steps.
-
-
-
-# Using our templates
-
