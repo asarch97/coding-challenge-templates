@@ -14,7 +14,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch('http://ec2-52-90-251-91.compute-1.amazonaws.com:8080/api/supervisors')
+    fetch('http://nodelb-2016202280.us-east-1.elb.amazonaws.com/api/supervisors')
       .then((response) => response.json())
       .then((data) => {
             console.log(data);
@@ -28,7 +28,7 @@ function App() {
 
   let newEmp = async (e) => {
     e.preventDefault();
-    let resp = await fetch("http://ec2-52-90-251-91.compute-1.amazonaws.com:8080/api/submit", {
+    let resp = await fetch("http://nodelb-2016202280.us-east-1.elb.amazonaws.com/api/submit", {
       "method": "POST",
       "headers": { 'Content-Type': 'application/json' },
       "body": JSON.stringify({
